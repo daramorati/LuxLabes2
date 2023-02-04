@@ -1,0 +1,300 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&display=swap');
+
+
+  html{
+    font-size: 62.5%; 
+    /* 1 REM === 10PX (DEZ PX) */
+
+    font-family: "Nunito", sans-serif;  
+    scroll-behavior: smooth;
+    width: 100%;
+  }
+
+  :root{
+
+    --azul-01: #1B2259;
+    --azul-02: #3F368C;
+    --azul-03: #13177A;
+    --azul-04: #070558;
+
+
+    /* MOBILE */
+    --cabecalho-01: 2.2rem;
+    --cabecalho-02: 2rem;
+    --cabecalho-03: 1.6rem;
+    --cabecalho-04: 2.4rem;
+    --paragrafo-01: 1.4rem;
+    --paragrafo-02: 1.6rem;
+    --paragrafo-03: 1.2rem;
+    --link-01: 1.4rem;
+
+  }
+
+  /* MOBILE FIRST */
+
+  .container{
+    width: 100%;
+    padding: 0 2rem;
+  }
+
+  /* FUNDO */
+
+  .fundo{
+    /* background-image:url("../imagens/fundo__degrade.png");
+    background-position: bottom, center;
+    background-repeat: no-repeat;
+    background-size: cover; */
+    background-color: var(--azul-03);
+  }
+  
+  /* .marca_d_agua{
+    background-image:url("../imagens/marca_d_agua.png");
+    background-repeat: no-repeat;
+    background-position: bottom, center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 2rem 1.25rem 2rem 1.25rem;
+  } */
+
+  /* CABEÇALHO */
+
+  .cabecalho {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 2.4rem;
+  }
+
+  .cabecalho__logo {
+    width: 5.6rem;
+  }
+
+  .cabecalho__navegacao ul{
+    display: none;
+  }
+
+  .cabecalho__botao {
+    display: none;
+  }
+
+  /* MENU LATERAL */
+
+  .cabecalho__menu{
+    color: #FFF;
+    font-size: 1.4rem;
+  }
+
+  .menu__lateral{
+    margin-top: 0rem;
+    padding-top: 2rem;
+    float: right;
+    color: #FFF;
+    display: flex;
+    flex-direction: column;
+    background-color: #1B2259;
+    width: 75vw;
+    height: 100vh;
+    z-index: 999;
+    position: absolute;
+    right: -100vw;
+    transition: .25s;
+  }
+
+  .menu__lateral--ativo{
+    /*------problema com a transição, que antes era tudo usado o "right", só que ele é bugado e trocamos para "left"-----*/
+    right: 0;
+    transition: .25s;
+  }
+
+  .menu__lateral-link{
+    height: 4rem;
+    color: #FEFFA4;
+    padding-left: 2rem;
+    display: flex;
+    align-items: center;
+  }
+
+  .menu__lateral-link i {
+    padding-right: 1.5rem;
+  }
+
+  .menu__lateral-link--ativo{
+    color: #FFF;
+    border-left: 8px solid #FFF;
+    padding-left: 1.5rem;
+  }
+
+  /* TITULO PRINCIPAL */
+
+  .titulo__principal{
+    font-size: var(--cabecalho-01);
+    font-weight: 600;    
+    line-height: 140%;
+    color: #FFF;
+    margin-top: 5rem;
+    padding: 0 2rem 0 2rem;
+    text-align: center;
+  }
+
+  .cabecalho__notebook{
+   display: none;
+  }
+
+  /* AREA QUEM SOMOS */
+
+  .titulo__secao {
+    font-size: var(--cabecalho-01);
+    font-weight: 700;
+    color: var(--azul-01);
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+
+  .area_quem_somos__texto{
+    font-size: var(--paragrafo-01);
+    color: #000;
+    line-height: 150%;
+    text-align: center;
+    margin-bottom: 6rem;
+  }
+
+  /* CITAÇÃO */
+
+  .citacao{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin-bottom: 6rem;
+  }
+
+  .citacao__aspas{
+    width: 2.6rem;
+    align-self: flex-start;
+  }
+
+  .citacao__texto{
+    font-size: var(--cabecalho-03);
+    color: var(--azul-04);
+    text-align: center;
+    line-height: 140%;
+    padding: 0 3rem 0 3rem;
+    margin-bottom: 3.2rem;
+  }
+
+  .citacao__autor{
+    font-size: var(--cabecalho-02);
+    color: var(--azul-04);
+    font-weight: 700;
+    text-align: center;
+  }
+
+  .citacao__aspas_final{
+    width: 2.6rem;
+    align-self: flex-end;
+  }
+
+  /* CONHEÇA A EQUIPE */
+
+  .destaques-titulo{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    border-bottom: 1px solid #afb2c5;
+    margin-bottom: 3rem;
+  }
+
+  .titulo-equipe-projetos{
+    font-size: var(--cabecalho-02);
+    color: var(--azul-03);
+    font-weight: 700;
+    border-bottom: 3px solid var(--azul-01);
+ 
+  }
+
+  .destaques-link{
+    display: none;
+  }
+
+  .destaques-link2 {
+   font-size: var(--link-01);
+    text-decoration: none;
+    color: var(--azul-04);
+  }
+
+  /* DESTAQUE MEMBROS */
+
+  .destaques-membros{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .destaques-membros a{
+    text-decoration: none;
+  }
+
+  .membro{
+    margin-bottom: 3.6rem;
+  }
+
+  .membro img {
+    width: 20rem;
+    border-radius: 50%;
+    margin-bottom: 1.4rem;
+  }
+
+  .membro h4{
+    font-size: var(--cabecalho-03);
+    color: var(--azul-01);
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 0.5rem;
+  }
+
+  .membro p{
+    font-size: var(--paragrafo-03);
+    color: #000;
+    text-align: center;
+  }
+
+  /* DESTAQUE PROJETOS */
+
+  .destaques-projetos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .destaques-projetos a{
+    text-decoration: none;
+  }
+
+  .projetos {
+    box-shadow: -1px 3px 8px 0px rgba(0, 0, 0, 0.25);
+    width: 24.4rem;
+    height: 30rem;
+    text-align: center;
+    border-radius: 3.2rem;
+    padding: 2.4rem 0.8rem;
+    margin-bottom: 2.4rem;
+  }
+
+  .projetos img{ 
+    border-radius: 100%;
+    width: 15rem;
+    box-shadow: 0px 4px 4px 0px #00000040;
+    margin-bottom: 1rem;
+  }
+
+  .projetos h4{
+    font-size: var(--cabecalho-04);
+    color: var(--azul-01); 
+    font-weight: 700;
+    margin-bottom: 1rem; 
+  }
+
+  .projetos p{
+    font-size: var(--paragrafo-03);
+    color: #000;
+  
+  }
