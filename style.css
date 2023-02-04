@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&display=swap');
+
+* {
+    font-family: "Nunito", sans-serif;
+  }
+
+  .fundo{
+    background-image:url("../imagens/fundo__degrade.png");
+    background-position: bottom, center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+
+
