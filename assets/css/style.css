@@ -23,6 +23,7 @@
     --cabecalho-02: 2rem;
     --cabecalho-03: 1.6rem;
     --cabecalho-04: 2.4rem;
+    --cabecalho-05: 2.2rem;
     --paragrafo-01: 1.4rem;
     --paragrafo-02: 1.6rem;
     --paragrafo-03: 1.2rem;
@@ -125,6 +126,10 @@
 
   /* TITULO PRINCIPAL */
 
+  .cabecalho__inferior{
+    padding-bottom: 3rem;
+  }
+
   .titulo__principal{
     font-size: var(--cabecalho-01);
     font-weight: 600;    
@@ -142,12 +147,13 @@
   /* AREA QUEM SOMOS */
 
   .titulo__secao {
-    font-size: var(--cabecalho-01);
+    font-size: var(--cabecalho-05);
     font-weight: 700;
     color: var(--azul-01);
     text-transform: uppercase;
     text-align: center;
     margin-bottom: 3rem;
+    margin-top: 3rem;
   }
 
   .area_quem_somos__texto{
@@ -298,3 +304,67 @@
     color: #000;
   
   }
+
+  /* FOOTER */
+
+  .footer__informacoes{
+    padding-top: 3rem;
+    padding-bottom: 4rem;
+  }
+
+  .logo_footer{
+     width:14rem;
+     margin-bottom: 2.8rem;
+  }
+
+
+
+.infos_local{
+  font-size: var(--paragrafo-02);
+  color: #FFF;
+  line-height: 140%;
+}
+
+.footer_contato{
+  font-size: var(--paragrafo-02);
+  color: #FFF;
+  font-weight: 700;
+  margin-top: 2.4rem;
+  margin-bottom: 0.6rem;
+}
+
+.footer_titulo{
+  display: none;
+}
+
+.redes_sociais{
+  margin-top: 6rem;
+  display: flex;
+  justify-content: center;
+  gap: 1.6rem;
+}
+
+.redes_sociais img{
+  width: 5rem;
+}
+
+
+/* TABLET */
+
+@media (min-width: 768px){
+
+  :root{
+
+     /* TABLET */
+    --cabecalho-01: 4.6rem;
+    --cabecalho-02: 3.6rem;
+    --cabecalho-03: 1.6rem;
+    --cabecalho-04: 2.4rem;
+    --cabecalho-05: 3.6rem;
+    --paragrafo-01: 2.4rem;
+    --paragrafo-02: 1.6rem;
+    --paragrafo-03: 1.2rem;
+    --link-01: 1.4rem;
+
+  }
+}
