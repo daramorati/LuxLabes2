@@ -24,6 +24,7 @@
     --cabecalho-03: 1.6rem;
     --cabecalho-04: 2.4rem;
     --cabecalho-05: 2.2rem;
+    --cabecalho-06: 1.6rem;
     --paragrafo-01: 1.4rem;
     --paragrafo-02: 1.6rem;
     --paragrafo-03: 1.2rem;
@@ -360,6 +361,7 @@
     --cabecalho-03: 2.6rem;
     --cabecalho-04: 2.4rem;
     --cabecalho-05: 3.6rem;
+    --cabecalho-06: 1.6rem;
     --paragrafo-01: 2.4rem;
     --paragrafo-02: 1.8rem;
     --paragrafo-03: 1.8rem;
@@ -437,4 +439,181 @@
   .projetos h4{
     margin-bottom: 1.5rem;
   }
+}
+
+@media (min-width: 1180px){
+
+  :root{
+
+    /*  WEB */
+   --cabecalho-01: 4rem;
+   --cabecalho-02: 2rem;
+   --cabecalho-03: 2rem;
+   --cabecalho-04: 2.4rem;
+   --cabecalho-05: 4rem;
+   --cabecalho-06: 1.6rem;
+   --paragrafo-01: 1.6rem;
+   --paragrafo-02: 1.6rem;
+   --paragrafo-03: 1.6rem;
+   --link-01: 2rem;
+
+ }
+
+ .container{
+    max-width: 1140px;
+		padding: 0 2rem;
+		box-sizing: content-box;
+		margin: 0 auto;
+ }
+
+ /*   CABEÇALHO  */
+
+ .cabecalho{
+  padding-top: 5.6rem;
+ }
+
+ .cabecalho__logo{
+  width: 10rem;
+ }
+
+ .cabecalho__navegacao ul{
+  display: block;
+}
+
+.cabecalho__navegacao ul{
+  display: flex;
+  gap: 2rem;
+}
+
+.cabecalho__link a{
+  font-size: var(--cabecalho-06);
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+  line-height: 40px;
+  letter-spacing: 0.5px;
+  text-align: center;
+  z-index: 1;
+}
+
+nav .cabecalho__link a:hover {
+  color: #ffd236;
+  border-bottom: solid #ffd236 0.25rem;
+  font-size: 1.8rem;
+  letter-spacing: 0.2rem;
+}
+
+.cabecalho__botao{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 170px;
+  height: 50px;
+  border-style: none;
+  border-radius: 100px;
+  font-weight: 500;
+  color: #272c64;
+  font-size: 16px;
+  text-decoration: none;
+  background-color: white;
+}
+
+.cabecalho__menu{
+  display: none;
+}
+
+/* TITULO PRINCIPAL */
+
+.cabecalho__inferior{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 4.5rem;
+  padding: 0;
+}
+
+.titulo__principal{
+  text-align: left;
+  margin: 0;
+  padding: 0;
+}
+
+.cabecalho__notebook{
+  display: block;
+  width: 56rem;
+}
+
+/* AREA QUEM SOMOS */
+
+.titulo__secao{
+  text-align: left;
+  margin-bottom: 3.4rem;
+}
+
+.area_quem_somos{
+  display: flex;
+  align-items: center;
+}
+
+.area_quem_somos__texto{
+  text-align: left;
+  padding-right: 12rem;
+}
+
+.citacao{
+  width: 120rem;
+}
+
+.citacao__texto{
+  padding: 0 1rem 0 1rem;
+}
+
+.citacao__aspas{
+  width: 3.5rem;
+}
+
+.citacao__aspas_final{
+  width: 3.5rem;
+}
+
+/* DESTAQUES MEMBROS */
+
+.destaques-titulo{
+  margin-bottom: 6.3rem;
+}
+
+/* PROJETOS */
+
+.projetos{
+  padding: 2.4rem 1.5rem;
+}
+
+/* FOOTER */
+
+.logo_footer{
+  width: 12rem;
+}
+
+.infos{
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__redes-sociais{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer_titulo{
+  display: block;
+  font-size: var(--paragrafo-02);
+  color: #FFF;
+  font-weight: 700;
+}
+
+.redes_sociais{
+  margin-top: 2.5rem;
+}
+
 }
