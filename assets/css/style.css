@@ -79,9 +79,8 @@
 
   /* MENU LATERAL */
 
-  .cabecalho__menu{
+  .cabecalho__menu i{
     color: #FFF;
-    font-size: 1.4rem;
   }
 
   .menu__lateral{
@@ -357,14 +356,85 @@
 
      /* TABLET */
     --cabecalho-01: 4.6rem;
-    --cabecalho-02: 3.6rem;
-    --cabecalho-03: 1.6rem;
+    --cabecalho-02: 2.8rem;
+    --cabecalho-03: 2.6rem;
     --cabecalho-04: 2.4rem;
     --cabecalho-05: 3.6rem;
     --paragrafo-01: 2.4rem;
-    --paragrafo-02: 1.6rem;
-    --paragrafo-03: 1.2rem;
-    --link-01: 1.4rem;
+    --paragrafo-02: 1.8rem;
+    --paragrafo-03: 1.8rem;
+    --link-01: 2rem;
 
+  }
+
+  .container{
+     padding: 0 4.2rem;
+  }
+
+  /* CABEÇALHO */
+
+  .cabecalho{
+    padding-top: 4.5rem;
+  }
+
+  .cabecalho__logo {
+    width: 12rem;
+  }
+
+  .cabecalho__menu i{
+    font-size: 3.5rem;
+  }
+
+  /* TITULO PRINCIPAL  */
+
+  .titulo__principal{
+    margin-top: 13rem;
+  }
+
+  .cabecalho__inferior{
+    padding-bottom: 10rem;
+  }
+
+  /* CONHEÇA A EQUIPE */
+
+  .destaques{
+    margin-bottom: 5rem;
+  }
+
+  .destaques-membros{
+    margin-top: 5rem;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .membro{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 5rem;
+  }
+
+  .membro h4{
+    margin-bottom: 1rem;
+  }
+
+  /* PROJETOS */
+
+  .destaques-projetos{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .projetos{
+    width: 30rem;
+    height: 35rem;
+  }
+
+  .projetos h4{
+    margin-bottom: 1.5rem;
   }
 }
