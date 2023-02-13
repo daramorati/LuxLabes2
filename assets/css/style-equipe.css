@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&display=swap');
+
+html{
+    font-size: 62.5%; 
+    /* 1 REM === 10PX (DEZ PX) */
+
+    font-family: "Nunito", sans-serif;  
+    scroll-behavior: smooth;
+    width: 100%;
+  }
+
+  :root{
+
+    --azul-01: #1B2259;
+    --azul-02: #3F368C;
+    --azul-03: #13177A;
+    --azul-04: #070558;
+
+
+    /* MOBILE */
+    --cabecalho-01: 2.2rem;
+    --cabecalho-02: 2rem;
+    --cabecalho-03: 1.6rem;
+    --cabecalho-04: 2.4rem;
+    --cabecalho-05: 2.2rem;
+    --cabecalho-06: 1.6rem;
+    --paragrafo-01: 1.4rem;
+    --paragrafo-02: 1.6rem;
+    --paragrafo-03: 1.2rem;
+    --link-01: 1.6rem;
+
+  }
+
+
+  /* MOBILE FIRST */
+
+  .container{
+    width: 100%;
+    padding: 0 2rem;
+  }
+
+  /* FUNDO */
+
+  .fundo{
+    /* background-image:url("../imagens/fundo__degrade.png");
+    background-position: bottom, center;
+    background-repeat: no-repeat;
+    background-size: cover; */
+    background-color: var(--azul-03);
+  }
+  
+  /* .marca_d_agua{
+    background-image:url("../imagens/marca_d_agua.png");
+    background-repeat: no-repeat;
+    background-position: bottom, center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 2rem 1.25rem 2rem 1.25rem;
+  } */
+
+  /* CABEÇALHO */
+
+  .cabecalho {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 2.4rem;
+    padding-bottom: 2rem;
+  }
+
+  .cabecalho__logo {
+    width: 5.6rem;
+  }
+
+  .cabecalho__navegacao ul{
+    display: none;
+  }
+
+  .cabecalho__botao {
+    display: none;
+  }
+
+  /* MENU LATERAL */
+
+  .cabecalho__menu i{
+    color: #FFF;
+  }
+
+  .menu__lateral{
+    margin-top: 0rem;
+    padding-top: 2rem;
+    float: right;
+    color: #FFF;
+    display: flex;
+    flex-direction: column;
+    background-color: #1B2259;
+    width: 75vw;
+    height: 100vh;
+    z-index: 999;
+    position: absolute;
+    right: -100vw;
+    transition: .25s;
+  }
+
+  .menu__lateral--ativo{
+    /*------problema com a transição, que antes era tudo usado o "right", só que ele é bugado e trocamos para "left"-----*/
+    right: 0;
+    transition: .25s;
+  }
+
+  .menu__lateral-link{
+    height: 4rem;
+    color: #FEFFA4;
+    padding-left: 2rem;
+    display: flex;
+    align-items: center;
+  }
+
+  .menu__lateral-link i {
+    padding-right: 1.5rem;
+  }
+
+  .menu__lateral-link--ativo{
+    color: #FFF;
+    border-left: 8px solid #FFF;
+    padding-left: 1.5rem;
+  }
+
+  /* MARCAÇÃO */
+
+.marcacao a {
+  font-size: var(--link-01);
+  text-decoration: none;
+  font-weight: 600;
+  margin-top: 2.4rem;
+}
+
+.nome-participante{
+  font-size: var(--cabecalho-02);
+  color: var(--azul-04);
+  font-weight: 700;
+}
+
+.dados-participante img{
+  border-radius: 100%;
+  width: 20rem;
+}
