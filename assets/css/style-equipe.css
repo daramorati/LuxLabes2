@@ -19,7 +19,7 @@ html{
 
     /* MOBILE */
     --cabecalho-01: 2.2rem;
-    --cabecalho-02: 2rem;
+    --cabecalho-02: 2.2rem;
     --cabecalho-03: 1.6rem;
     --cabecalho-04: 2.4rem;
     --cabecalho-05: 2.2rem;
@@ -27,7 +27,7 @@ html{
     --paragrafo-01: 1.4rem;
     --paragrafo-02: 1.6rem;
     --paragrafo-03: 1.2rem;
-    --link-01: 1.6rem;
+    --link-01: 1.8rem;
 
   }
 
@@ -130,6 +130,7 @@ html{
 .marcacao a {
   font-size: var(--link-01);
   text-decoration: none;
+  color: var(--azul-03);
   font-weight: 600;
   margin-top: 2.4rem;
 }
@@ -144,3 +145,46 @@ html{
   border-radius: 100%;
   width: 20rem;
 }
+
+/* DADOS PARTICIPANTE */
+
+.dados-participante h2{
+  font-size: var(--cabecalho-03);
+  font-weight: 600;
+  color: var(--azul-01);
+}
+
+.dados-participante p{
+  font-size: var(--paragrafo-01);
+  font-weight: 500;
+}
+
+.dados-participante a{
+  display: block;
+  font-size: var(--paragrafo-01);
+  font-weight: 600;
+  text-decoration: none;
+  color: var(--azul-04);
+}
+
+.dados-participante{
+  text-align: center;
+}
+
+#participante-contato{
+  font-weight: 700;
+}
+
+.redes-sociais{
+background-color: #070558;
+}
+
+.twitter i{
+font-size: 10rem;
+color: aliceblue;
+}
+
+.instagram i{
+  font-size: 10rem;
+  color: aliceblue;
+  }
