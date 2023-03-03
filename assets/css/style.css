@@ -213,8 +213,7 @@
     font-size: var(--cabecalho-02);
     color: var(--azul-03);
     font-weight: 700;
-    border-bottom: 3px solid var(--azul-01);
- 
+    border-bottom: 3px solid var(--azul-01); 
   }
 
   .destaques-link{

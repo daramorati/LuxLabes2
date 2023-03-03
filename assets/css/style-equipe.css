@@ -21,12 +21,12 @@ html{
     --cabecalho-01: 2.2rem;
     --cabecalho-02: 2.2rem;
     --cabecalho-03: 1.6rem;
-    --cabecalho-04: 2.4rem;
+    --cabecalho-04: 1.8rem;
     --cabecalho-05: 2.2rem;
     --cabecalho-06: 1.6rem;
     --paragrafo-01: 1.4rem;
     --paragrafo-02: 1.6rem;
-    --paragrafo-03: 1.2rem;
+    --paragrafo-03: 1.8rem;
     --link-01: 1.8rem;
 
   }
@@ -132,39 +132,53 @@ html{
   text-decoration: none;
   color: var(--azul-03);
   font-weight: 600;
-  margin-top: 2.4rem;
+  text-transform: uppercase;
+}
+
+.marcacao{
+  margin-top: 4.2rem;
 }
 
 .nome-participante{
   font-size: var(--cabecalho-02);
   color: var(--azul-04);
   font-weight: 700;
+  margin-top: 1.6rem;
 }
 
 .dados-participante img{
   border-radius: 100%;
-  width: 20rem;
+  width: 22rem;
+  margin-top: 4.2rem;
+  margin-bottom: 2.4rem;
 }
 
 /* DADOS PARTICIPANTE */
 
 .dados-participante h2{
   font-size: var(--cabecalho-03);
-  font-weight: 600;
+  font-weight: 700;
   color: var(--azul-01);
+  margin-bottom: 0.2rem;
 }
 
 .dados-participante p{
   font-size: var(--paragrafo-01);
   font-weight: 500;
+  line-height: 130%;
+}
+
+.participante-nome p{
+  text-transform: uppercase;
+  margin-bottom: 1.2rem;
 }
 
 .dados-participante a{
   display: block;
   font-size: var(--paragrafo-01);
   font-weight: 600;
-  text-decoration: none;
   color: var(--azul-04);
+  line-height: 130%;
 }
 
 .dados-participante{
@@ -176,15 +190,80 @@ html{
 }
 
 .redes-sociais{
-background-color: #070558;
+display: flex;
+justify-content: center;
+gap: 1.6rem;
+margin-top: 1.6rem;
 }
 
 .twitter i{
-font-size: 10rem;
-color: aliceblue;
+font-size: 3.4rem;
+color: #FFF;
+padding: 1.2rem;
+border-radius: 100%;
+background-color: var(--azul-04);
 }
 
 .instagram i{
-  font-size: 10rem;
-  color: aliceblue;
+  font-size: 3.4rem;
+  color: #FFF;
+  padding: 1.2rem;
+border-radius: 100%;
+background-color: var(--azul-04);
   }
+
+/*  INFORMAÇÃO PARTICIPANTE */
+
+.informacao-participante{
+  font-size: var(--paragrafo-02);
+  text-align: justify;
+  margin-top: 5.6rem;
+}
+
+.informacao-participante p{
+  margin-top: 1.6rem;
+  line-height: 130%;
+}
+
+/* PROJETOS */
+
+.projetos{
+  margin-top: 5.6rem;
+}
+
+.destaques-projetos-pessoais{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  border-bottom: 1px solid #afb2c5;
+  margin-bottom: 3rem;
+}
+
+.titulo-projetos-pessoais{
+  font-size: var(--cabecalho-02);
+  color: var(--azul-03);
+  font-weight: 700;
+  border-bottom: 3px solid var(--azul-01);
+}
+
+.projetos-links{
+  margin-bottom: 5.6rem;
+}
+
+.projetos-links h3{
+  font-size: var(--cabecalho-04);
+  font-weight: 700;
+  margin-bottom: 1.2rem;
+}
+
+.projetos-links a{
+  font-size: var(--paragrafo-01);
+  font-weight: 600;
+  color: var(--azul-04);
+  line-height: 130%;
+}
+
+.projetos-links i{
+  margin-right: 0.5rem;
+  margin-left: 0.2rem;
+}
