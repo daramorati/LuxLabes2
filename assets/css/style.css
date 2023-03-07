@@ -8,6 +8,7 @@
     font-family: "Nunito", sans-serif;  
     scroll-behavior: smooth;
     width: 100%;
+
   }
 
   :root{
@@ -42,29 +43,25 @@
   /* FUNDO */
 
   .fundo{
-    /* background-image:url("../imagens/fundo__degrade.png");
+    background-image:url("../imagens/fundo__degrade.png");
     background-position: bottom, center;
     background-repeat: no-repeat;
-    background-size: cover; */
-    background-color: var(--azul-03);
+    background-size: cover;
+   /* background-color: var(--azul-03);*/
   }
   
-  /* .marca_d_agua{
+  .marca_d_agua{
     background-image:url("../imagens/marca_d_agua.png");
     background-repeat: no-repeat;
     background-position: bottom, center;
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 2rem 1.25rem 2rem 1.25rem;
-  } */
+
+  } 
 
   /* CABEÇALHO */
 
-  .cabecalho {
-    display: flex;
-    justify-content: space-between;
-    padding-top: 2.4rem;
-  }
+
 
   .cabecalho__logo {
     width: 5.6rem;
@@ -78,51 +75,120 @@
     display: none;
   }
 
-  /* MENU LATERAL */
+  /*Cabeçalho novo*/
 
-  .cabecalho__menu i{
-    color: #FFF;
+  #menu{
+    list-style: none;
   }
-
-  .menu__lateral{
-    margin-top: 0rem;
-    padding-top: 2rem;
-    float: right;
-    color: #FFF;
-    display: flex;
-    flex-direction: column;
-    background-color: #1B2259;
-    width: 75vw;
-    height: 100vh;
-    z-index: 999;
-    position: absolute;
-    right: -100vw;
-    transition: .25s;
-  }
-
-  .menu__lateral--ativo{
-    /*------problema com a transição, que antes era tudo usado o "right", só que ele é bugado e trocamos para "left"-----*/
-    right: 0;
-    transition: .25s;
-  }
-
-  .menu__lateral-link{
-    height: 4rem;
-    color: #FEFFA4;
-    padding-left: 2rem;
+  
+  
+  #header{
+    box-sizing: border-box;
+    height: 70px ;
+    padding-top: 2.4rem;
     display: flex;
     align-items: center;
+    justify-content: space-between;
+
+  }
+  
+  #contato{
+    display: none;
+  }
+  #menu{
+    display: block;
+    position: absolute;
+    width: 100%;
+    top: 70px;
+    right: 0;
+    background-color: var(--azul-03);
+    transition: .6s;
+    z-index: 1000;
+    height: 0;
+    visibility: hidden;
+    overflow-y: hidden;
+    
+  }
+  #nav.active #menu{
+    padding-top: 1rem;
+    height: 100vh;
+    visibility: visible;
+    overflow-y: auto;
+  
   }
 
-  .menu__lateral-link i {
-    padding-right: 1.5rem;
+
+
+  .cabecalho__link a{
+    font-size: var(--cabecalho-06);
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    line-height: 40px;
+    letter-spacing: 0.5px;
+    text-align: center;
+    z-index: 1;
   }
 
-  .menu__lateral-link--ativo{
-    color: #FFF;
-    border-left: 8px solid #FFF;
-    padding-left: 1.5rem;
+  #menu a{
+    display: block;
+    padding: .5rem;
+    padding: 1rem 0;
+    margin: 0 1rem;
+    border-bottom: 2px solid rgba(0,0,0,.1);
+    color: white;
   }
+  
+  #menu a:hover{
+    color: #ffd236;
+    font-size: 1.8rem;
+    letter-spacing: 0.2rem;
+  
+  }
+  
+  #btn-mobile{
+    display: flex;
+    padding: .5rem 1rem;
+    font-family: "Nunito", sans-serif;  
+    font-size: 1rem;
+    border: none;
+    background: none;
+    cursor: pointer;
+    gap: 1.5rem;
+    color: white;
+  }
+  
+  #hamburguer{
+    border-top: 3px solid;
+    width: 30px;
+  }
+  
+  #hamburguer::after, #hamburguer::before{
+    content: '';
+    display: block;
+    width: 30px;
+    height: 3px;
+    margin-top: 6px;
+    background-color: currentColor;
+    transition: .3s;
+    position: relative;
+  }
+  
+  #nav.active #hamburguer{
+    border-top-color: transparent;
+  }
+  
+  #nav.active #hamburguer::before{
+    transform: rotate(135deg);
+  
+  }
+  
+  #nav.active #hamburguer::after{
+    transform: rotate(-135deg);
+    top: -9px;  
+  }
+  
+
 
   /* TITULO PRINCIPAL */
 
@@ -351,7 +417,7 @@
 
 /* TABLET */
 
-@media (min-width: 768px){
+@media (min-width: 600px){
 
   :root{
 
@@ -485,16 +551,7 @@
   gap: 2rem;
 }
 
-.cabecalho__link a{
-  font-size: var(--cabecalho-06);
-  text-decoration: none;
-  color: white;
-  text-transform: uppercase;
-  line-height: 40px;
-  letter-spacing: 0.5px;
-  text-align: center;
-  z-index: 1;
-}
+
 
 nav .cabecalho__link a:hover {
   color: #ffd236;
@@ -521,6 +578,66 @@ nav .cabecalho__link a:hover {
 .cabecalho__menu{
   display: none;
 }
+
+/*Cabecalho novo*/
+
+#btn-mobile{
+  display:none;
+}
+
+#header{
+  box-sizing: border-box;
+  height: 70px ;
+  padding-top: 2.4rem;
+  display: flex;
+  align-items: center;
+
+}
+
+#menu{
+  position: relative;
+  display: flex;
+  list-style: none;
+  gap: .5rem;
+  visibility: visible;
+  overflow-y: visible;
+  z-index: 1;
+  top: -20px;
+  transition: none;
+
+}
+
+#menu a:hover{
+  color: #ffd236;
+  border-bottom: solid #ffd236 0.25rem;
+  font-size: 1.8rem;
+  letter-spacing: 0.2rem;
+
+}
+
+#menu a{
+display: block;
+padding: .5rem;
+border-bottom: none;
+font-size: 22px;
+
+}
+
+#contato{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 170px;
+  height: 50px;
+  border-style: none;
+  border-radius: 100px;
+  font-weight: 500;
+  color: #272c64;
+  font-size: 16px;
+  text-decoration: none;
+  background-color: white;
+}
+
 
 /* TITULO PRINCIPAL */
 

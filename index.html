@@ -15,28 +15,22 @@
     <div class="fundo">
         <div class="marca_d_agua">
             <div class="container">
-                <header class="cabecalho">
+                <header id="header" class="cabecalho">
                     <a href="index.html"><img class="cabecalho__logo" src="assets/imagens/logo_labes.png" alt="logo LABES"></a>
-                    <nav class="cabecalho__navegacao">
-                        <ul>
-                            <li class="cabecalho__link"><a href="#">Equipe</a></li>
-                            <li class="cabecalho__link"><a href="#">Catálogo</a></li>
-                            <li class="cabecalho__link"><a href="#">Projetos</a></li>
-                            <li class="cabecalho__link"><a href="#">Sobre o LABES</a></li>
-                        </ul> 
-                    </nav>
-                    <a href="#" class="cabecalho__botao">Entre em contato</a>
-                    <a href="#" class="cabecalho__menu" aria-label="Menu"><i class="fa-solid fa-bars fa-2x"></i></a>
-                </header>
 
-                <!-- <nav class="menu__lateral">
-                    
-                    <a href="#" class="menu__lateral-link menu-lateral-link--ativo"><i class="fa-solid fa-people-group"></i>Equipe</a>
-                    <a href="#" class="menu__lateral-link"><i class="fa-solid fa-clipboard-list"></i>Catálogo</a>
-                    <a href="#" class="menu__lateral-link"><i class="fa-solid fa-pen-ruler"></i>Projetos</a>
-                    <a href="#" class="menu__lateral-link"><i class="fa-solid fa-question"></i>Sobre o Labes</a>
-                    <a href="#" class="menu__lateral-link"><i class="fa-solid fa-envelope"></i>Entre em contato</a>
-                </nav> -->
+                    <nav id="nav">
+                      <button aria-label="Abrir Menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu" aria-expanded="false">Menu
+                        <span id="hamburguer"></span>
+                      </button>
+                      <ul id="menu" role="menu">
+                        <li class="cabecalho__link"><a href="/">Equipe</a></li>
+                        <li class="cabecalho__link"><a href="/">Catálogo</a></li>
+                        <li class="cabecalho__link"><a href="/">Projetos</a></li>
+                        <li class="cabecalho__link"><a href="/">Sobre o LABES</a></li>
+                      </ul>
+                    </nav>
+                    <button id="contato"> <a>Entre em contato</a></button>
+                  </header>
 
                 <div class="cabecalho__inferior">
                     <h1 class="titulo__principal">Laboratório de Práticas em Engenharia de Software “Ricardo de Almeida Falbo”</h1>
@@ -167,7 +161,7 @@
             </footer>
             
         </div>
-        <script src="assets/index.js"></script>
+        <script src="assets/script.js"></script>
     
 </body>
 </html>
