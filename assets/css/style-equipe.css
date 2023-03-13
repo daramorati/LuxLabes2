@@ -270,6 +270,47 @@ background-color: var(--azul-04);
   font-size: var(--paragrafo-03);
 }
 
+/* FOOTER */
+
+.footer__informacoes{
+  padding-top: 3rem;
+  padding-bottom: 4rem;
+}
+
+.logo_footer{
+   width:12rem;
+   margin-bottom: 2.8rem;
+}
+
+.infos_local{
+font-size: var(--paragrafo-02);
+color: #FFF;
+line-height: 140%;
+}
+
+.footer_contato{
+font-size: var(--paragrafo-02);
+color: #FFF;
+font-weight: 700;
+margin-top: 2.4rem;
+margin-bottom: 0.6rem;
+}
+
+.footer_titulo{
+display: none;
+}
+
+.redes_sociais{
+margin-top: 6rem;
+display: flex;
+justify-content: center;
+gap: 1.6rem;
+}
+
+.redes_sociais img{
+width: 5rem;
+}
+
 /* TABLET */
 
 @media (min-width: 768px){
@@ -341,11 +382,11 @@ background-color: var(--azul-04);
    --cabecalho-03: 2.4rem;
    --cabecalho-04: 2rem;
    --cabecalho-05: 4rem;
-   --cabecalho-06: 1.4rem;
+   --cabecalho-06: 1.6rem;
    --paragrafo-01: 1.4rem;
    --paragrafo-02: 1.6rem;
    --paragrafo-03: 1.6rem;
-   --link-01: 2rem;
+   --link-01: 1.6rem;
 
  }
 
@@ -449,4 +490,31 @@ nav .cabecalho__link a:hover {
   width: 78rem;
 }
 
+/* FOOTER */
+
+.logo_footer{
+  width: 12rem;
+}
+
+.infos{
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__redes-sociais{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer_titulo{
+  display: block;
+  font-size: var(--paragrafo-02);
+  color: #FFF;
+  font-weight: 700;
+}
+
+.redes_sociais{
+  margin-top: 2.5rem;
+}
 }

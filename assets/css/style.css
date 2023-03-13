@@ -312,11 +312,9 @@
   }
 
   .logo_footer{
-     width:14rem;
+     width:12rem;
      margin-bottom: 2.8rem;
   }
-
-
 
 .infos_local{
   font-size: var(--paragrafo-02);
