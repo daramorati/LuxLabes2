@@ -43,21 +43,14 @@
   /* FUNDO */
 
   .fundo{
-    background-image:url("../imagens/fundo__degrade.png");
+   /* background-image:url("../imagens/fundo__degrade.png");
     background-position: bottom, center;
     background-repeat: no-repeat;
-    background-size: cover;
-   /* background-color: var(--azul-03);*/
+    background-size: cover;*/
+    background-color: var(--azul-03);
   }
   
-  .marca_d_agua{
-    background-image:url("../imagens/marca_d_agua.png");
-    background-repeat: no-repeat;
-    background-position: bottom, center;
-    background-repeat: no-repeat;
-    background-size: cover;
 
-  } 
 
   /* CABEÇALHO */
 
@@ -71,6 +64,7 @@
     display: none;
   }
 
+  
   .cabecalho__botao {
     display: none;
   }
@@ -85,7 +79,7 @@
   #header{
     box-sizing: border-box;
     height: 70px ;
-    padding-top: 2.4rem;
+    padding-top: 0rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -142,7 +136,7 @@
   #menu a:hover{
     color: #ffd236;
     font-size: 1.8rem;
-    letter-spacing: 0.2rem;
+
   
   }
   
@@ -191,9 +185,25 @@
 
 
   /* TITULO PRINCIPAL */
+  .fundo_inferior{
+    background-image:url("../imagens/fundo__degrade.png");
+    background-position: bottom, center;
+    background-repeat: no-repeat;
+    background-size: cover;
 
+  }
+
+  .marca_d_agua{
+    background-image:url("../imagens/marca_d_agua.png");
+    background-repeat: no-repeat;
+    background-position: bottom, center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
   .cabecalho__inferior{
-    padding-bottom: 3rem;
+    padding-bottom: 6rem;
+    padding-top: 4rem;
+    height: 50%;;
   }
 
   .titulo__principal{
@@ -201,7 +211,7 @@
     font-weight: 600;    
     line-height: 140%;
     color: #FFF;
-    margin-top: 5rem;
+    padding-top: 5rem;
     padding: 0 2rem 0 2rem;
     text-align: center;
   }
@@ -372,9 +382,16 @@
   }
 
   /* FOOTER */
+  .fundo_footer{
+    background-image:url("../imagens/fundo_maior.png");
+    background-image:url("../imagens/fundo__degrade.png");
+    background-position: bottom, center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
 
   .footer__informacoes{
-    padding-top: 3rem;
+    padding-top: 8rem;
     padding-bottom: 4rem;
   }
 
@@ -406,13 +423,13 @@
 .redes_sociais{
   margin-top: 6rem;
   display: flex;
-  justify-content: center;
   gap: 1.6rem;
 }
 
 .redes_sociais img{
   width: 5rem;
 }
+
 
 
 /* TABLET */
@@ -446,7 +463,7 @@
   }
 
   .cabecalho__logo {
-    width: 12rem;
+    width: 9rem;
   }
 
   .cabecalho__menu i{
@@ -456,7 +473,7 @@
   /* TITULO PRINCIPAL  */
 
   .titulo__principal{
-    margin-top: 13rem;
+    padding-top: 13rem;
   }
 
   .cabecalho__inferior{
@@ -499,7 +516,7 @@
 
   .projetos{
     width: 30rem;
-    height: 35rem;
+    height: 38rem;
   }
 
   .projetos h4{
@@ -520,7 +537,7 @@
    --cabecalho-06: 1.6rem;
    --paragrafo-01: 1.6rem;
    --paragrafo-02: 1.6rem;
-   --paragrafo-03: 1.6rem;
+   --paragrafo-03: 1.9rem;
    --link-01: 2rem;
 
  }
@@ -534,12 +551,18 @@
 
  /*   CABEÇALHO  */
 
- .cabecalho{
-  padding-top: 5.6rem;
+ #header{
+  box-sizing: border-box;
+  height: 70px ;
+  padding-top: 2.4rem;
+  display: flex;
+  align-items: center;
+  padding-bottom: 4rem;
  }
 
  .cabecalho__logo{
   width: 10rem;
+
  }
 
  .cabecalho__navegacao ul{
@@ -551,13 +574,16 @@
   gap: 2rem;
 }
 
+#entre__contato{
+  display: none;
+}
 
 
 nav .cabecalho__link a:hover {
   color: #ffd236;
   border-bottom: solid #ffd236 0.25rem;
   font-size: 1.8rem;
-  letter-spacing: 0.2rem;
+
 }
 
 .cabecalho__botao{
@@ -584,13 +610,16 @@ nav .cabecalho__link a:hover {
 #btn-mobile{
   display:none;
 }
-
+.fundo{
+  padding-top: 1rem;
+}
 #header{
   box-sizing: border-box;
   height: 70px ;
   padding-top: 2.4rem;
   display: flex;
   align-items: center;
+  padding-bottom: 4rem;
 
 }
 
@@ -611,7 +640,8 @@ nav .cabecalho__link a:hover {
   color: #ffd236;
   border-bottom: solid #ffd236 0.25rem;
   font-size: 1.8rem;
-  letter-spacing: 0.2rem;
+  font-weight: 700;
+
 
 }
 
@@ -619,7 +649,7 @@ nav .cabecalho__link a:hover {
 display: block;
 padding: .5rem;
 border-bottom: none;
-font-size: 22px;
+font-size: 2rem;
 
 }
 
@@ -645,7 +675,7 @@ font-size: 22px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-top: 4.5rem;
+ padding-top: 4.5rem;
   padding: 0;
 }
 
@@ -656,6 +686,7 @@ font-size: 22px;
 }
 
 .cabecalho__notebook{
+  padding-top: 10rem;
   display: block;
   width: 56rem;
 }
@@ -705,6 +736,10 @@ font-size: 22px;
   padding: 2.4rem 1.5rem;
 }
 
+.projetos p{
+  line-height: 2.3rem;
+}
+
 /* FOOTER */
 
 .logo_footer{
@@ -733,4 +768,27 @@ font-size: 22px;
   margin-top: 2.5rem;
 }
 
+}
+
+@media (min-width: 1500px){
+
+  .fundo_inferior{
+    background-image:url("../imagens/fundo_maior.png");
+  }
+  .marca_d_agua{
+    background-image:url("../imagens/fundo_grande.png");
+  }
+}
+
+@media (min-width: 2000px){
+  .fundo_inferior, .marca_d_agua{
+  background-color: var(--azul-03);
+  background-image:none;}
+
+  .fundo_footer{
+    background-image: none;
+    background-color: var(--azul-03);
+
+  }
+  
 }
